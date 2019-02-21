@@ -8,22 +8,23 @@
     Body{background:url(./workday.jpeg) no-repeat left top }
 </style>
 <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./dateformat.js"></script>
 <script type="text/javascript" src="workdayCalc.js"></script>
 <body >
 <table style="margin-left: 50%;margin-top: 200px">
     <tr >
         <td>
-            参考班次:<input type="text" placeholder="如：20190221,B2" id="sample"><br/>
+            参考班次:<input type="text" placeholder="如：2019-02-21,D,1,2" id="sample" disabled><br/>
         </td>
     </tr>
     <tr>
         <td>
-            <input type="button" id="calc" value="计算" style="background-color: #2aa198;"/><br/>
+            <input type="date" id="dateTime"/> <input type="button" id="calc" value="计算" style="background-color: #2aa198;"/><br/>
         </td>
     </tr>
     <tr>
         <td>
-            计算结果:<input type="text" id="result" />
+            计算结果:<textarea id="result"  rows="5" cols="20" ></textarea>
         </td>
     </tr>
 </table>
