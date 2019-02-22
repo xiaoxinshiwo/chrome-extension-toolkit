@@ -49,6 +49,8 @@ $(function() {
     // 2019-03-21,B,2,4
 
     $("#dateTime").val(DateFormat.format(new Date(), 'yyyy-MM-dd'));
+    // 默认加载结果
+    calc();
     $("#calc").click(function(){
         calc();
     });
