@@ -90,7 +90,7 @@ $(function() {
         let targetWorkDayOrder = targetWorkDayStr.split("-")[1];
         let targetWorkDayContent = parseInt(sampleWorkDayContent) + parseInt(workDayCircle);
         if(targetWorkDayContent > 5){
-            targetWorkDayContent = targetWorkDayContent - 5;
+            targetWorkDayContent = parseInt(targetWorkDayContent % 5);
         }
         let finalTargetWorkDayOrder='';
         switch (targetWorkDay) {
