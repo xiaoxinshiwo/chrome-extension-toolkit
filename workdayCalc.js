@@ -57,6 +57,7 @@ $(function() {
      * 按照上述规则计算班次
      */
     function calc() {
+        // 下次更新的话仍需要以D班作为模板，因为D班是1 2 3 4 5 顺序的开始
         let sampleWorkDayALL = '2019-02-21,D,1,2';
 
         let targetDate = new Date();
@@ -88,9 +89,6 @@ $(function() {
         let targetWorkDay = targetWorkDayStr.split("-")[0];
         let targetWorkDayOrder = targetWorkDayStr.split("-")[1];
         let targetWorkDayContent = parseInt(sampleWorkDayContent) + parseInt(workDayCircle);
-        if(targetWorkDay == 'D'){
-            targetWorkDayContent = targetWorkDayContent + 1;
-        }
         if(targetWorkDayContent > 5){
             targetWorkDayContent = targetWorkDayContent - 5;
         }
