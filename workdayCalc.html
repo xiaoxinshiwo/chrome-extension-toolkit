@@ -5,20 +5,25 @@
     <title>敏敏班次计算</title>
 </head>
 <style>
-  body,input,textarea{
-    font-size:16px;
-    align:center;
-  }
+    body,input,textarea{
+        font-size:16px;
+        align:center;
+    }
+    input{
+        height:30px;
+        width:180px;
+    }
 </style>
-<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="./dateformat.js"></script>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="dateformat.js"></script>
 <script type="text/javascript" src="workdayCalc.js"></script>
 <body style="width:500px;height:300px;">
 <li><a href="popup.html" target="_self">返回</a></li>
 <table style="margin: 50px">
     <tr >
         <td>
-            参考班次:<input type="text" placeholder="如：2019-02-21,D,1,2" id="sample" disabled><br/>
+            参考班次:<input type="text" id="sample" disabled/>
+            <input type="button" id="submit" value = "设置" style="width:100px;height:40px;background-color: #2aa198;"/>
         </td>
     </tr>
     <tr>
@@ -26,16 +31,16 @@
             计算结果:<textarea id="result"  rows="5" cols="20" disabled></textarea>
         </td>
     </tr>
-  <tr>
-    <td>
-      选择日期:<input type="date" id="dateTime"/>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align: center">
-      <input type="button" id="calc" value = "计算" style="width:100px;height:40px;background-color: #2aa198;"/>
-    </td>
-  </tr>
+    <tr>
+        <td>
+            选择日期:<input type="date" id="dateTime" />
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center">
+            <input type="button" id="calc" value = "计算" style="width:100px;height:40px;background-color: #2aa198;"/>
+        </td>
+    </tr>
 </table>
 
 </body>
