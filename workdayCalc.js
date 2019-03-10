@@ -138,11 +138,9 @@ $(function() {
                 if('1' == targetWorkDayOrder){
                     if(targetWorkDayContent < 4){
                         finalTargetWorkDayOrder = targetWorkDay.concat(targetWorkDayContent).concat('早早班 第一天   两点下班');
-
                     }else{
                         finalTargetWorkDayOrder = targetWorkDay.concat(targetWorkDayContent).concat(' 第一天   两点下班');
                     }
-                    finalTargetWorkDayOrder = targetWorkDay.concat(targetWorkDayContent).concat('早早班 第一天   两点下班');
                 }else{
                     finalTargetWorkDayOrder = targetWorkDay.concat(targetWorkDayContent).concat('第二天   国内第二个下班');
                 }
